@@ -1,0 +1,112 @@
+.wd-bookmarks-title {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: inline;
+}
+
+.wd-user-avatar-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    float: left;
+    display: inline;
+}
+
+.wd-bookmarked-post {
+    float: left;
+}
+
+.wd-bookmarked-post-content {
+    float: left;
+    display: inline;
+    max-width: 506px;
+    margin-left: 12px;
+
+}
+
+.wd-bookmarked-post-tuit-content {
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+.wd-post-account-name {
+    font-weight: bold;
+}
+
+#van-gogh {
+    background: url("../images/vg-avatar.jpeg") no-repeat;
+    background-size: 48px;
+
+}
+
+#gauguin {
+    background: url("../images/gg-avatar.jpeg") no-repeat;
+    background-size: 48px;
+
+}
+
+.wd-bookmarked-post-linked-content {
+
+}
+
+.wd-bookmarked-post-linked-content .wd-link-text-preview {
+    border-radius: 0 0 30px 30px;
+    border: rgb(47, 51, 54) solid;
+}
+
+.wd-bookmarked-post-image {
+    width: 504px;
+    height: 264px;
+    border-radius: 30px 30px 0 0;
+    border: rgb(47, 51, 54) solid;
+}
+
+#gauguin-image {
+    background: url("../images/gauguin-image.jpeg") no-repeat;
+    background-size: 504px;
+}
+
+#van-gogh-image {
+    background: url("../images/van-gogh-image.jpeg") no-repeat;
+    background-size: 504px;
+}
+
+.wd-bookmarked-post-linked-title {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 12px ;
+}
+
+.wd-bookmarked-post-linked-text {
+    color: lightgrey;
+    font-size: 15px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 0;
+
+}
+
+.wd-bookmarked-icon-column {
+    float: left;
+    width: 100px;
+    height: 10px;
+    padding: 12px;
+}
+
+.wd-bookmarked-icon-column a{
+    font-size: 13px;
+    color: lightgrey;
+    text-decoration: none;
+}
+
+.wd-bookmarked-icon-column .wd-numbers {
+    padding-left: 12px;
+}
+
+.wd-like {
+    color: red;
+}
