@@ -4,11 +4,12 @@
 
 #searchbar-input {
     height: 30px;
-    width: 75%;
+    width: 90%;
     border-radius: 20px;
     color: white;
-    border-style: none;
-    background: #2f2e33 url("../images/search.png") no-repeat 10px 6px;
+    border: 1px solid gray;
+    /*background: #2f2e33 url("../images/search.png") no-repeat 10px 6px;*/
+    background: url("../images/search.png") no-repeat 10px 6px;
     background-size: 18px;
     padding-left: 35px;
 }
@@ -90,4 +91,75 @@
 #bloomberg-booster {
     background: white url("../images/covid-booster.avif") no-repeat;
     background-size: 135px;
+}
+
+.wd-full-width-btn {
+    width: 100%;
+}
+
+.wd-starship {
+    /*background: url("../images/Starship-Mk1-Day.webp") no-repeat;*/
+    /*background-size: 100%;*/
+    width: 100%;
+    /*min-height: 200px;*/
+    /*max-height: 400px;*/
+}
+.wd-starship img {
+    width: 100%
+}
+
+#wd-starship {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    bottom: 6px;
+    left: 6px;
+}
+
+.wd-to-follow-pfp {
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 50%;
+}
+
+#wd-account-1 {
+    background: url("../images/java.webp") 50% 50% no-repeat;
+    background-size: 140%;
+
+}
+
+#wd-account-2 {
+    background: url("../images/relativity.png") 50% 50% no-repeat;
+    background-size: 100%;
+
+}
+
+#wd-account-3 {
+    background: url("../images/virgin.webp") 50% 50% no-repeat;
+    background-size: 140%;
+
+}
+
+#wd-account-4 {
+    background: url("../images/nasa.webp") 50% 50% no-repeat;
+    background-size: 120%;
+
+}
+
+#wd-account-5 {
+    background: url("../images/tesla.webp") 50% 50% no-repeat;
+    background-size: 120%;
+
+}
+
+.wd-right-sidebar .wd-account-image {
+    background-size: 100%;
+    max-height: 45px;
+    max-width: 45px;
+    border-radius: 50%;
+}
+
+.wd-suggested-post-image img {
+    max-height: 100px;
+    border-radius: 20px;
 }
