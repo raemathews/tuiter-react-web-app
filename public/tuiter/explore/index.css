@@ -124,13 +124,13 @@
 
 #wd-account-1 {
     background: url("../images/java.webp") 50% 50% no-repeat;
-    background-size: 140%;
+    background-size: 185%;
 
 }
 
 #wd-account-2 {
     background: url("../images/relativity.png") 50% 50% no-repeat;
-    background-size: 100%;
+    background-size: 105%;
 
 }
 
@@ -148,18 +148,26 @@
 
 #wd-account-5 {
     background: url("../images/tesla.webp") 50% 50% no-repeat;
-    background-size: 120%;
+    background-size: 160%;
 
 }
 
-.wd-right-sidebar .wd-account-image {
+/*.wd-right-sidebar .wd-account-image {*/
+/*    background-size: 100%;*/
+/*    max-height: 45px;*/
+/*    max-width: 45px;*/
+/*    border-radius: 50%;*/
+/*}*/
+
+.wd-account-image {
     background-size: 100%;
-    max-height: 45px;
     max-width: 45px;
+    max-height: 45px;
     border-radius: 50%;
 }
 
 .wd-suggested-post-image img {
     max-height: 100px;
+    min-width: 100px;
     border-radius: 20px;
 }
