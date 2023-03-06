@@ -1,25 +1,33 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Labs from "./labs/index";
+import HelloWorld from "./labs/a6/hello-world";
+import Tuiter from "./tuiter/index";
+import {BrowserRouter as Router, Link} from "react-router-dom";
+import {Routes, Route} from "react-router";
+
+
+require('react-dom');
+window.React2 = require('react');
+console.log(window.React1 === window.React2);
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    return(
+        <Router>
+        <div className="container">
+            <Routes>
+                <Route index
+                       element={<Labs/>}/>
+                <Route path="/hello"
+                       element={<HelloWorld/>}/>
+                <Route path="/tuiter"
+                       element={<Tuiter/>}/>
+            </Routes>
+        </div>
+        </Router>
+    );
 }
 
 export default App;
