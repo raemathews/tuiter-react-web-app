@@ -8,6 +8,7 @@ import {BrowserRouter as Router, Link} from "react-router-dom";
 import {Routes, Route} from "react-router";
 
 
+
 require('react-dom');
 window.React2 = require('react');
 console.log(window.React1 === window.React2);
@@ -18,11 +19,11 @@ function App() {
         <Router>
         <div className="container">
             <Routes>
-                <Route index
+                <Route path="/*"
                        element={<Labs/>}/>
                 <Route path="/hello"
                        element={<HelloWorld/>}/>
-                <Route path="/tuiter"
+                <Route path="/tuiter/*"
                        element={<Tuiter/>}/>
             </Routes>
         </div>
