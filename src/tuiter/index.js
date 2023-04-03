@@ -10,7 +10,7 @@ import {Routes, Route} from "react-router";
 import TuitsList from "./tuits/TuitsList";
 import WhatsHappening from "./home/whats-happening";
 const store = configureStore(
-    {reducer: {who: whoReducer, tuits: tuitsReducer}});
+    {reducer: {who: whoReducer, tuitsData: tuitsReducer}});
 
 function Tuiter() {
     return (

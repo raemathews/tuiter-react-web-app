@@ -1,22 +1,28 @@
 import React from "react";
 import {useDispatch, useSelector} from "react-redux";
+import {updateTuitThunk} from "../../services/tuitsThunk";
 import {changeLike} from "./tuits-reducer";
 
-const TuitStats = ({
-    _id,
-    replies,
-    retuits,
-    likes,
-    liked
-                   }) => {
+const TuitStats = ({tuit}) => {
+    const {
+        _id,
+        replies,
+        retuits,
+        likes,
+        liked
+    } = tuit;
     const tuits
         = useSelector(state => state.tuits);
     const dispatch = useDispatch()
     const likeColor = liked ? "red" : "gray"
     const defaultColor = "gray"
-    const onLikeClickHandler = (id) => {
-        console.log("id: " + id)
-        dispatch(changeLike(id))
+    const onLikeClickHandler = (tuit) => {
+        const tuitLikes = liked ? likes - 1 : likes + 1;
+        dispatch(updateTuitThunk({
+            ...tuit,
+            likes: tuitLikes,
+            liked: !liked
+        }));
     }
     return (
         <div className="row">
@@ -34,7 +40,7 @@ const TuitStats = ({
             </div>
             <div className="col-3">
                 <a href="#">
-                    <i onClick={() => onLikeClickHandler(_id)}
+                    <i onClick={() => onLikeClickHandler(tuit)}
                        className="fa fa-heart p-2" style={{color: likeColor}}/>
                 </a>
                 <span className="wd-numbers wd-like">{likes}</span>
