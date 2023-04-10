@@ -9,12 +9,12 @@ import {findTuitsThunk}
 const TuitsList = () => {
     const {tuits, loading} = useSelector(
         state => state.tuitsData)
-        const dispatch = useDispatch();
-        useEffect(() => {
-            dispatch(findTuitsThunk())
-        }, [])
+    const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch(findTuitsThunk())
+    }, [])
 
-        return (
+    return (
         <>
             <h2>Home</h2>
             <ul className="list-group">
